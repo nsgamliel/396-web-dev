@@ -1,0 +1,244 @@
+body * {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #eee;
+}
+
+/* body * {
+	border: solid 1px black;
+} */
+
+a {
+	text-decoration: none;
+	color: #00e;
+}
+
+aside {
+	/* border: solid 1px hotpink; */
+	/* float: right; */
+	position: fixed;
+	right: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Comfortaa', cursive;
+	font-weight: bold;
+}
+
+main {
+	margin-top: 70px;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 3vw;
+	border: solid 1px #ccc;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 70px;
+	background-color: white;
+}
+
+nav * {
+	display: inline-block;
+}
+
+nav > div {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav > div > * {
+	margin: 5px;
+}
+
+i {
+	height: min-content;
+}
+
+.card {
+	background-color: white;
+	border: solid 1px #ccc;
+	margin-bottom: 10px;
+}
+
+.card-heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 10px;
+}
+
+.card-heading > * {
+	margin: 0;
+}
+
+.card-pic {
+	width: 100%;
+}
+
+.card-icons {
+	padding: 10px;
+}
+
+.card-icons > * {
+	margin-right: 5px;
+}
+
+.card-icons > .rightside {
+	float: right;
+}
+
+.card > .like-count {
+	margin-left: 10px;
+	margin-top: 0;
+}
+
+.card p {
+	font-size: 0.8em;
+	margin: 7px;
+	margin-left: 10px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.card > .caption {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 0;
+}
+
+.card a {
+	font-size: 0.8em;
+	height: min-content;
+}
+
+.card > .caption > a {
+	margin-right: 10px;
+}
+
+.card > .comment-section {
+	border: solid 1px #ccc;
+	padding: 10px;
+}
+
+.card > .comment-section > * {
+	margin-right: 10px;
+}
+
+.pic-and-name {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 5px;
+	/* width: 100%; */
+}
+.pic-and-name > * {
+	margin-right: 20px;
+}
+
+.prof-pic {
+	width: 6vw;
+	height: 6vw;
+	border-radius: 50%;
+}
+
+.posts {
+	margin: 10px;
+	margin-left: 8vw;
+	margin-right: 30vw;
+	width: 60vw;
+}
+
+.story {
+	text-align: center;
+	/* float: left; */
+	margin: 5px;
+	margin-bottom: 0;
+	/* width: 6vw; */
+}
+
+.stories {
+	background-color: white;
+	margin-top: 80px;
+	margin-left: 8vw;
+	margin-right: 30vw;
+	width: 60vw;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.story-pic {
+	width: 4.5vw;
+	height: 4.5vw;
+	border-radius: 50%;
+	border: solid 3px #ccc;
+	margin-top: 10px;
+	margin-bottom: -10px;
+}
+
+.story-name {
+	color: #777;
+}
+
+.suggested-name {
+	padding: 5px;
+	width: 50%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.suggested-name > * {
+	margin: 0;
+}
+
+.suggested-name > p {
+	color: #777;
+}
+
+.sugg-pic {
+	width: 4.5vw;
+	height: 4.5vw;
+	border-radius: 50%;
+}
+
+#suggestions {
+	width: 30vw;
+}
+
+#suggestions > * {
+	margin: 5px;
+}
+
+#suggestions-header {
+	color: #777;
+	font-size: 1.5em;
+	margin-left: 5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #suggestions {
+		display: none;
+	}
+	.stories {
+		width: 90vw;
+		margin: 10px 5vw;
+	}
+	.posts {
+		width: 90vw;
+		margin: 10px 5vw;
+
+	}
+}
